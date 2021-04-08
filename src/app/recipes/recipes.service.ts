@@ -30,8 +30,8 @@ export class RecipesService {
   getRecipe(recipeId: string): Recipe {
     return {
       ...this.recipes.find(recipe => {
-        return recipe.id === recipeId
+        return recipe.id === recipeId;
       })
-    }
+    };
   }
 }
