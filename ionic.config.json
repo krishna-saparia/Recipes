@@ -1,5 +1,7 @@
 {
   "name": "angular-ionic-feb",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
