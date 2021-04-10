@@ -16,11 +16,10 @@ const routes: Routes = [
       },
       {
         path: ':recipeId',
-        loadChildren: () => import('./recipes/recipe-detail/recipe-detail.module').then(m => m.RecipeDetailPageModule)
+        loadChildren: './recipes/recipe-detail/recipe-detail.module#RecipeDetailPageModule'
       }
-    ],
-
-  },
+    ]
+  }
 ];
 
 @NgModule({

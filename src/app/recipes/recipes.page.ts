@@ -20,5 +20,25 @@ export class RecipesPage implements OnInit {
     console.log(this.recipes);
   }
 
+  ionViewWillEnter() {
+    console.log('ionViewWillEnter');
+    this.recipes = this.recipeService.getAllRecipes();
+  }
 
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter');
+  }
+
+  ionViewWillLeave() {
+    console.log('ionViewWillLeave');
+  }
+
+  ionViewDidLeave() {
+    console.log('ionViewDidLeave');
+  }
+
+  // tslint:disable-next-line:use-lifecycle-interface
+  ngOnDestroy() {
+    console.log('ngOnDestroy');
+  }
 }
